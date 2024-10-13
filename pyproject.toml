@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "ppc64le-cuda-benchmark"
+version = "0.1.0"
+description = "Benchmark used for testing IMB PowerPC computer"
+authors = ["Jakub Dubec <jakub.dubec@stuba.sk>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+
+[tool.black]
+line-length = 119
+target-version = ['py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.github
+  | .venv
+  | data
+)/
+'''
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
