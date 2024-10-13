@@ -1,4 +1,4 @@
-FROM nvidia/cuda-ppc64le:11.1.1-base-centos8
+FROM nvidia/cuda-ppc64le:11.1.1-devel-centos8
 
 # Set environment variables for CUDA
 ENV PATH /usr/local/cuda/bin:${PATH}
