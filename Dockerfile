@@ -5,10 +5,10 @@ ENV PATH /usr/local/cuda/bin:${PATH}
 ENV LD_LIBRARY_PATH /usr/local/cuda/lib64:${LD_LIBRARY_PATH}
 
 # Install PyTorch for ppc64le architecture with CUDA support
-RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117/ppc64le
+RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117/ppc64le
 
 # Install Lightning, LitServer, transformers, pandas, matplotlib
-RUN pip3 install lightning lit-server pandas matplotlib transformers sentencepiece
+RUN pip install lightning lit-server pandas matplotlib transformers sentencepiece
 
 # Create a working directory
 WORKDIR /workspace
