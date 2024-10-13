@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "ppc64le-cuda-benchmark"
 version = "0.1.0"
-description = "Benchmark used for testing IMB PowerPC computer"
+description = "Benchmark used for testing IBM PowerPC computer"
 authors = ["Jakub Dubec <jakub.dubec@stuba.sk>"]
 readme = "README.md"
 
