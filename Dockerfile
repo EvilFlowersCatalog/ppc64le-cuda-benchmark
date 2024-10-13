@@ -4,9 +4,6 @@ FROM nvidia/cuda-ppc64le:11.1.1-base-centos8
 ENV PATH /usr/local/cuda/bin:${PATH}
 ENV LD_LIBRARY_PATH /usr/local/cuda/lib64:${LD_LIBRARY_PATH}
 
-# Install necessary dependencies
-RUN yum update && apt-get install -y python3-devel
-
 # Install PyTorch for ppc64le architecture with CUDA support
 RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117/ppc64le
 
